@@ -3,6 +3,7 @@ package org.villainy.lottaterracotta.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,14 @@ public class TerracottaPressurePlateBlock extends PressurePlateBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_pressure_plate");
     }
 
+    public TerracottaPressurePlateBlock() {
+        super(Sensitivity.EVERYTHING,
+                Block.Properties.create(Material.ROCK, MaterialColor.ADOBE)
+                        .doesNotBlockMovement()
+                        .hardnessAndResistance(0.5F));
+        setRegistryName("terracotta_pressure_plate");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if (group == ItemGroup.SEARCH || isEnabled())
@@ -34,6 +43,7 @@ public class TerracottaPressurePlateBlock extends PressurePlateBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaPressurePlateBlocks.UNCOLORED,
                 TerracottaPressurePlateBlocks.WHITE,
                 TerracottaPressurePlateBlocks.ORANGE,
                 TerracottaPressurePlateBlocks.MAGENTA,

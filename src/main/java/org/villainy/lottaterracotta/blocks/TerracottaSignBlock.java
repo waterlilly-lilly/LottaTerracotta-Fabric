@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.IFluidState;
 import net.minecraft.item.DyeColor;
@@ -49,6 +50,15 @@ public class TerracottaSignBlock extends AbstractSignBlock {
                 .sound(SoundType.STONE));
         this.dyeColor = dyeColor;
         setRegistryName(dyeColor.getName() + "_terracotta_sign");
+    }
+
+    public TerracottaSignBlock() {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE)
+                .doesNotBlockMovement()
+                .hardnessAndResistance(1.0F)
+                .sound(SoundType.STONE));
+        this.dyeColor = null;
+        setRegistryName("terracotta_sign");
     }
 
     @Override
@@ -209,6 +219,7 @@ public class TerracottaSignBlock extends AbstractSignBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaSignBlocks.UNCOLORED,
                 TerracottaSignBlocks.WHITE,
                 TerracottaSignBlocks.ORANGE,
                 TerracottaSignBlocks.MAGENTA,

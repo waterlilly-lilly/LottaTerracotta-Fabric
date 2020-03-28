@@ -37,7 +37,7 @@ def generateBlock(name, blockType, templateFile, outputFile):
 
 def generateBlockAllColors(blockType, templateFile, outputFile):
     for color in COLORS:
-            generateBlock(color + '_terracotta', blockType, template, output % color)
+            generateBlock(color + '_terracotta', blockType, template, output % (color + "_"))
 
 
 def writeTagFile(filename, blocks):
@@ -97,98 +97,98 @@ def generateTags():
 # Slabs
 
 slabAssets = {
-    'slab/blockstate_slab.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_slab.json',
-    'slab/model_block_slab_top.j2' : 'assets/lottaterracotta/models/block/%s_terracotta_slab_top.json',
-    'slab/model_block_slab.j2': 'assets/lottaterracotta/models/block/%s_terracotta_slab.json',
-    'slab/model_item_slab.j2': 'assets/lottaterracotta/models/item/%s_terracotta_slab.json',
-    'slab/recipe_slab.j2': 'data/lottaterracotta/recipes/%s_terracotta_slab.json',
-    'slab/loot_table_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_slab.json'
+    'slab/blockstate_slab.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_slab.json',
+    'slab/model_block_slab_top.j2' : 'assets/lottaterracotta/models/block/%sterracotta_slab_top.json',
+    'slab/model_block_slab.j2': 'assets/lottaterracotta/models/block/%sterracotta_slab.json',
+    'slab/model_item_slab.j2': 'assets/lottaterracotta/models/item/%sterracotta_slab.json',
+    'slab/recipe_slab.j2': 'data/lottaterracotta/recipes/%sterracotta_slab.json',
+    'slab/loot_table_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_slab.json'
 }
 
 stairsAssets = {
-    'stairs/blockstate_stairs.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_stairs.json',
-    'stairs/model_block_stairs.j2': 'assets/lottaterracotta/models/block/%s_terracotta_stairs.json',
-    'stairs/model_block_stairs_inner.j2': 'assets/lottaterracotta/models/block/%s_terracotta_stairs_inner.json',
-    'stairs/model_block_stairs_outer.j2': 'assets/lottaterracotta/models/block/%s_terracotta_stairs_outer.json',
-    'stairs/model_item_stairs.j2': 'assets/lottaterracotta/models/item/%s_terracotta_stairs.json',
-    'stairs/recipe_stairs.j2': 'data/lottaterracotta/recipes/%s_terracotta_stairs.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_stairs.json'
+    'stairs/blockstate_stairs.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_stairs.json',
+    'stairs/model_block_stairs.j2': 'assets/lottaterracotta/models/block/%sterracotta_stairs.json',
+    'stairs/model_block_stairs_inner.j2': 'assets/lottaterracotta/models/block/%sterracotta_stairs_inner.json',
+    'stairs/model_block_stairs_outer.j2': 'assets/lottaterracotta/models/block/%sterracotta_stairs_outer.json',
+    'stairs/model_item_stairs.j2': 'assets/lottaterracotta/models/item/%sterracotta_stairs.json',
+    'stairs/recipe_stairs.j2': 'data/lottaterracotta/recipes/%sterracotta_stairs.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_stairs.json'
 }
 
 wallAssets = {
-    'wall/blockstate_wall.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_wall.json',
-    'wall/model_block_wall_inventory.j2': 'assets/lottaterracotta/models/block/%s_terracotta_wall_inventory.json',
-    'wall/model_block_wall_post.j2': 'assets/lottaterracotta/models/block/%s_terracotta_wall_post.json',
-    'wall/model_block_wall_side.j2': 'assets/lottaterracotta/models/block/%s_terracotta_wall_side.json',
-    'wall/model_item_wall.j2': 'assets/lottaterracotta/models/item/%s_terracotta_wall.json',
-    'wall/recipe_wall.j2': 'data/lottaterracotta/recipes/%s_terracotta_wall.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_wall.json'
+    'wall/blockstate_wall.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_wall.json',
+    'wall/model_block_wall_inventory.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_inventory.json',
+    'wall/model_block_wall_post.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_post.json',
+    'wall/model_block_wall_side.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_side.json',
+    'wall/model_item_wall.j2': 'assets/lottaterracotta/models/item/%sterracotta_wall.json',
+    'wall/recipe_wall.j2': 'data/lottaterracotta/recipes/%sterracotta_wall.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_wall.json'
 }
 
 fenceAssets = {
-    'fence/blockstate_fence.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_fence.json',
-    'fence/model_block_fence_inventory.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_inventory.json',
-    'fence/model_block_fence_post.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_post.json',
-    'fence/model_block_fence_side.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_side.json',
-    'fence/model_item_fence.j2': 'assets/lottaterracotta/models/item/%s_terracotta_fence.json',
-    'fence/recipe_fence.j2': 'data/lottaterracotta/recipes/%s_terracotta_fence.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_fence.json'
+    'fence/blockstate_fence.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_fence.json',
+    'fence/model_block_fence_inventory.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_inventory.json',
+    'fence/model_block_fence_post.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_post.json',
+    'fence/model_block_fence_side.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_side.json',
+    'fence/model_item_fence.j2': 'assets/lottaterracotta/models/item/%sterracotta_fence.json',
+    'fence/recipe_fence.j2': 'data/lottaterracotta/recipes/%sterracotta_fence.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_fence.json'
 }
 
 fenceGateAssets = {
-    'fence_gate/blockstate_fence_gate.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_fence_gate.json',
-    'fence_gate/model_block_fence_gate.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_gate.json',
-    'fence_gate/model_block_fence_gate_open.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_gate_open.json',
-    'fence_gate/model_block_fence_gate_wall.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_gate_wall.json',
-    'fence_gate/model_block_fence_gate_wall_open.j2': 'assets/lottaterracotta/models/block/%s_terracotta_fence_gate_wall_open.json',
-    'fence_gate/model_item_fence_gate.j2': 'assets/lottaterracotta/models/item/%s_terracotta_fence_gate.json',
-    'fence_gate/recipe_fence_gate.j2': 'data/lottaterracotta/recipes/%s_terracotta_fence_gate.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_fence_gate.json'
+    'fence_gate/blockstate_fence_gate.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_fence_gate.json',
+    'fence_gate/model_block_fence_gate.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_gate.json',
+    'fence_gate/model_block_fence_gate_open.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_gate_open.json',
+    'fence_gate/model_block_fence_gate_wall.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_gate_wall.json',
+    'fence_gate/model_block_fence_gate_wall_open.j2': 'assets/lottaterracotta/models/block/%sterracotta_fence_gate_wall_open.json',
+    'fence_gate/model_item_fence_gate.j2': 'assets/lottaterracotta/models/item/%sterracotta_fence_gate.json',
+    'fence_gate/recipe_fence_gate.j2': 'data/lottaterracotta/recipes/%sterracotta_fence_gate.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_fence_gate.json'
 }
 
 ladderAssets = {
-    'ladder/blockstate_ladder.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_ladder.json',
-    'ladder/model_block_ladder.j2': 'assets/lottaterracotta/models/block/%s_terracotta_ladder.json',
-    'ladder/model_item_ladder.j2': 'assets/lottaterracotta/models/item/%s_terracotta_ladder.json',
-    'ladder/recipe_ladder.j2': 'data/lottaterracotta/recipes/%s_terracotta_ladder.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_ladder.json'
+    'ladder/blockstate_ladder.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_ladder.json',
+    'ladder/model_block_ladder.j2': 'assets/lottaterracotta/models/block/%sterracotta_ladder.json',
+    'ladder/model_item_ladder.j2': 'assets/lottaterracotta/models/item/%sterracotta_ladder.json',
+    'ladder/recipe_ladder.j2': 'data/lottaterracotta/recipes/%sterracotta_ladder.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_ladder.json'
 }
 
 buttonAssets = {
-    'button/blockstate_button.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_button.json',
-    'button/model_block_button_inventory.j2': 'assets/lottaterracotta/models/block/%s_terracotta_button_inventory.json',
-    'button/model_block_button_pressed.j2': 'assets/lottaterracotta/models/block/%s_terracotta_button_pressed.json',
-    'button/model_block_button.j2': 'assets/lottaterracotta/models/block/%s_terracotta_button.json',
-    'button/model_item_button.j2': 'assets/lottaterracotta/models/item/%s_terracotta_button.json',
-    'button/recipe_button.j2': 'data/lottaterracotta/recipes/%s_terracotta_button.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_button.json'
+    'button/blockstate_button.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_button.json',
+    'button/model_block_button_inventory.j2': 'assets/lottaterracotta/models/block/%sterracotta_button_inventory.json',
+    'button/model_block_button_pressed.j2': 'assets/lottaterracotta/models/block/%sterracotta_button_pressed.json',
+    'button/model_block_button.j2': 'assets/lottaterracotta/models/block/%sterracotta_button.json',
+    'button/model_item_button.j2': 'assets/lottaterracotta/models/item/%sterracotta_button.json',
+    'button/recipe_button.j2': 'data/lottaterracotta/recipes/%sterracotta_button.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_button.json'
 }
 
 leverAssets = {
-    'lever/blockstate_lever.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_lever.json',
-    'lever/model_block_lever.j2': 'assets/lottaterracotta/models/block/%s_terracotta_lever.json',
-    'lever/model_block_lever_on.j2': 'assets/lottaterracotta/models/block/%s_terracotta_lever_on.json',
-    'lever/model_block_lever_inventory.j2': 'assets/lottaterracotta/models/block/%s_terracotta_lever_inventory.json',
-    'lever/model_item_lever.j2': 'assets/lottaterracotta/models/item/%s_terracotta_lever.json',
-    'lever/recipe_lever.j2': 'data/lottaterracotta/recipes/%s_terracotta_lever.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_lever.json'
+    'lever/blockstate_lever.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_lever.json',
+    'lever/model_block_lever.j2': 'assets/lottaterracotta/models/block/%sterracotta_lever.json',
+    'lever/model_block_lever_on.j2': 'assets/lottaterracotta/models/block/%sterracotta_lever_on.json',
+    'lever/model_block_lever_inventory.j2': 'assets/lottaterracotta/models/block/%sterracotta_lever_inventory.json',
+    'lever/model_item_lever.j2': 'assets/lottaterracotta/models/item/%sterracotta_lever.json',
+    'lever/recipe_lever.j2': 'data/lottaterracotta/recipes/%sterracotta_lever.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_lever.json'
 }
 
 pressurePlateAssets = {
-    'pressure_plate/blockstate_pressure_plate.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_pressure_plate.json',
-    'pressure_plate/model_block_pressure_plate_down.j2': 'assets/lottaterracotta/models/block/%s_terracotta_pressure_plate_down.json',
-    'pressure_plate/model_block_pressure_plate.j2': 'assets/lottaterracotta/models/block/%s_terracotta_pressure_plate.json',
-    'pressure_plate/model_item_pressure_plate.j2': 'assets/lottaterracotta/models/item/%s_terracotta_pressure_plate.json',
-    'pressure_plate/recipe_pressure_plate.j2': 'data/lottaterracotta/recipes/%s_terracotta_pressure_plate.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_pressure_plate.json'
+    'pressure_plate/blockstate_pressure_plate.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_pressure_plate.json',
+    'pressure_plate/model_block_pressure_plate_down.j2': 'assets/lottaterracotta/models/block/%sterracotta_pressure_plate_down.json',
+    'pressure_plate/model_block_pressure_plate.j2': 'assets/lottaterracotta/models/block/%sterracotta_pressure_plate.json',
+    'pressure_plate/model_item_pressure_plate.j2': 'assets/lottaterracotta/models/item/%sterracotta_pressure_plate.json',
+    'pressure_plate/recipe_pressure_plate.j2': 'data/lottaterracotta/recipes/%sterracotta_pressure_plate.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_pressure_plate.json'
 }
 
 signAssets = {
-    'sign/blockstate_sign.j2' : 'assets/lottaterracotta/blockstates/%s_terracotta_sign.json',
-    'sign/model_block_sign.j2' : 'assets/lottaterracotta/models/block/%s_terracotta_sign.json',
-    'sign/model_item_sign.j2': 'assets/lottaterracotta/models/item/%s_terracotta_sign.json',
-    'sign/recipe_sign.j2': 'data/lottaterracotta/recipes/%s_terracotta_sign.json',
-    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%s_terracotta_sign.json'
+    'sign/blockstate_sign.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_sign.json',
+    'sign/model_block_sign.j2' : 'assets/lottaterracotta/models/block/%sterracotta_sign.json',
+    'sign/model_item_sign.j2': 'assets/lottaterracotta/models/item/%sterracotta_sign.json',
+    'sign/recipe_sign.j2': 'data/lottaterracotta/recipes/%sterracotta_sign.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_sign.json'
 }
 
 blockTypes = {
@@ -205,6 +205,16 @@ blockTypes = {
 }
 
 uncoloredBlockTypes = {
+    'slab' : slabAssets,
+    'stairs': stairsAssets,
+    'wall': wallAssets,
+    'button': buttonAssets,
+    'lever': leverAssets,
+    'pressure_plate': pressurePlateAssets,
+    'fence': fenceAssets,
+    'fence_gate': fenceGateAssets,
+    'ladder': ladderAssets,
+    'sign': signAssets
 }
 
 
@@ -216,7 +226,7 @@ for blockType, assets in blockTypes.items():
 # Uncolored variants
 for blockType, assets in uncoloredBlockTypes.items():
     for template, output in assets.items():
-        generateBlock("terracotta_" + blockType, blockType, template, output)
+        generateBlock("terracotta", blockType, template, output % "")
 
 
 generateTags()

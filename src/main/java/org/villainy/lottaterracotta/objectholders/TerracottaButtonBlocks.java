@@ -6,6 +6,9 @@ import org.villainy.lottaterracotta.blocks.TerracottaButtonBlock;
 @ObjectHolder("lottaterracotta")
 public class TerracottaButtonBlocks {
 
+    @ObjectHolder("terracotta_button")
+    public static final TerracottaButtonBlock UNCOLORED = null;
+
     @ObjectHolder("red_terracotta_button")
     public static final TerracottaButtonBlock RED = null;
 

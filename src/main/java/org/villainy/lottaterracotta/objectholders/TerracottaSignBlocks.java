@@ -6,6 +6,9 @@ import org.villainy.lottaterracotta.blocks.TerracottaSignBlock;
 @ObjectHolder("lottaterracotta")
 public class TerracottaSignBlocks {
 
+    @ObjectHolder("terracotta_sign")
+    public static final TerracottaSignBlock UNCOLORED = null;
+
     @ObjectHolder("red_terracotta_sign")
     public static final TerracottaSignBlock RED = null;
 

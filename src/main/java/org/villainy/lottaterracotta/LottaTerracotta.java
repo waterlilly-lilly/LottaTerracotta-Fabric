@@ -91,7 +91,7 @@ public class LottaTerracotta
             Stream.of(DyeColor.values()).forEach(dyeColor -> {
                 TerracottaSlabBlock slab = new TerracottaSlabBlock(dyeColor);
 
-                blockRegistry.register(slab);
+                blockRegistry.register(new TerracottaSlabBlock(dyeColor));
                 blockRegistry.register(new TerracottaStairsBlock(dyeColor, slab.getDefaultState()));
                 blockRegistry.register(new TerracottaWallBlock(dyeColor));
                 blockRegistry.register(new TerracottaButtonBlock(dyeColor));
@@ -102,6 +102,19 @@ public class LottaTerracotta
                 blockRegistry.register(new TerracottaSignBlock(dyeColor));
                 blockRegistry.register(new TerracottaLeverBlock(dyeColor));
             });
+
+            // Register uncolored versions
+            TerracottaSlabBlock slab = new TerracottaSlabBlock();
+            blockRegistry.register(new TerracottaSlabBlock());
+            blockRegistry.register(new TerracottaStairsBlock(slab.getDefaultState()));
+            blockRegistry.register(new TerracottaWallBlock());
+            blockRegistry.register(new TerracottaButtonBlock());
+            blockRegistry.register(new TerracottaPressurePlateBlock());
+            blockRegistry.register(new TerracottaFenceBlock());
+            blockRegistry.register(new TerracottaFenceGateBlock());
+            blockRegistry.register(new TerracottaLadderBlock());
+            blockRegistry.register(new TerracottaSignBlock());
+            blockRegistry.register(new TerracottaLeverBlock());
         }
 
         @SubscribeEvent

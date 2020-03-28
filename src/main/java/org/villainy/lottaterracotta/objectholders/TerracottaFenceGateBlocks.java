@@ -6,6 +6,9 @@ import org.villainy.lottaterracotta.blocks.TerracottaFenceGateBlock;
 @ObjectHolder("lottaterracotta")
 public class TerracottaFenceGateBlocks {
 
+    @ObjectHolder("terracotta_fence_gate")
+    public static final TerracottaFenceGateBlock UNCOLORED = null;
+
     @ObjectHolder("red_terracotta_fence_gate")
     public static final TerracottaFenceGateBlock RED = null;
 

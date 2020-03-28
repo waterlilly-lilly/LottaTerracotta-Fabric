@@ -6,6 +6,9 @@ import org.villainy.lottaterracotta.blocks.TerracottaPressurePlateBlock;
 @ObjectHolder("lottaterracotta")
 public class TerracottaPressurePlateBlocks {
 
+    @ObjectHolder("terracotta_pressure_plate")
+    public static final TerracottaPressurePlateBlock UNCOLORED = null;
+
     @ObjectHolder("red_terracotta_pressure_plate")
     public static final TerracottaPressurePlateBlock RED = null;
 

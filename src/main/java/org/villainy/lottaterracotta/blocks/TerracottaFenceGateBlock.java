@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +27,13 @@ public class TerracottaFenceGateBlock extends FenceGateBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_fence_gate");
     }
 
+    public TerracottaFenceGateBlock() {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE)
+                .hardnessAndResistance(2.0F, 6.0F)
+                .sound(SoundType.STONE));
+        setRegistryName("terracotta_fence_gate");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if (group == ItemGroup.SEARCH || isEnabled())
@@ -34,6 +42,7 @@ public class TerracottaFenceGateBlock extends FenceGateBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaFenceGateBlocks.UNCOLORED,
                 TerracottaFenceGateBlocks.WHITE,
                 TerracottaFenceGateBlocks.ORANGE,
                 TerracottaFenceGateBlocks.MAGENTA,

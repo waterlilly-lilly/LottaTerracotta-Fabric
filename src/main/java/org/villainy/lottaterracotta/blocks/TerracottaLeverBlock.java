@@ -3,6 +3,7 @@ package org.villainy.lottaterracotta.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.LeverBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -22,6 +23,11 @@ public class TerracottaLeverBlock extends LeverBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_lever");
     }
 
+    public TerracottaLeverBlock() {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE));
+        setRegistryName("terracotta_lever");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if(group == ItemGroup.SEARCH || isEnabled())
@@ -30,6 +36,7 @@ public class TerracottaLeverBlock extends LeverBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaLeverBlocks.UNCOLORED,
                 TerracottaLeverBlocks.WHITE,
                 TerracottaLeverBlocks.ORANGE,
                 TerracottaLeverBlocks.MAGENTA,

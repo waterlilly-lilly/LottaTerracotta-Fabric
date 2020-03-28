@@ -1,11 +1,13 @@
 {
   "replace": false,
   "values": [
+    "lottaterracotta:terracotta_fence_gate",
     "lottaterracotta:red_terracotta_fence_gate",
     "lottaterracotta:light_blue_terracotta_fence_gate",
     "lottaterracotta:lime_terracotta_fence",
     "lottaterracotta:purple_terracotta_fence",
     "lottaterracotta:green_terracotta_fence_gate",
+    "lottaterracotta:terracotta_fence",
     "lottaterracotta:magenta_terracotta_fence_gate",
     "lottaterracotta:brown_terracotta_fence_gate",
     "lottaterracotta:orange_terracotta_fence",

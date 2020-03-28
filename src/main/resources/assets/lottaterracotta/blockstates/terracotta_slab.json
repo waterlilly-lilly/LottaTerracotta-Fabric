@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "lottaterracotta:block/terracotta_slab" },
+    "type=top": { "model": "lottaterracotta:block/terracotta_slab_top" },
+    "type=double": { "model": "block/terracotta" }
+  }
+}

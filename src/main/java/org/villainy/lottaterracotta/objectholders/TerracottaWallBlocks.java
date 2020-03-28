@@ -6,6 +6,9 @@ import org.villainy.lottaterracotta.blocks.TerracottaWallBlock;
 @ObjectHolder("lottaterracotta")
 public class TerracottaWallBlocks {
 
+    @ObjectHolder("terracotta_wall")
+    public static final TerracottaWallBlock UNCOLORED = null;
+
     @ObjectHolder("red_terracotta_wall")
     public static final TerracottaWallBlock RED = null;
 

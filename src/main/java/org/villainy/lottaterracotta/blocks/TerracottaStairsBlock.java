@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -24,6 +25,11 @@ public class TerracottaStairsBlock extends StairsBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_stairs");
     }
 
+    public TerracottaStairsBlock(BlockState blockState) {
+        super(blockState, Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.8F));
+        setRegistryName("terracotta_stairs");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if (group == ItemGroup.SEARCH || isEnabled())
@@ -32,6 +38,7 @@ public class TerracottaStairsBlock extends StairsBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaStairsBlocks.UNCOLORED,
                 TerracottaStairsBlocks.WHITE,
                 TerracottaStairsBlocks.ORANGE,
                 TerracottaStairsBlocks.MAGENTA,

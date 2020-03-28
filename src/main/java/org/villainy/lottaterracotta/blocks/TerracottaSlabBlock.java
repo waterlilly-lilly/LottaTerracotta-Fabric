@@ -2,6 +2,7 @@ package org.villainy.lottaterracotta.blocks;
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -22,6 +23,11 @@ public class TerracottaSlabBlock extends SlabBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_slab");
     }
 
+    public TerracottaSlabBlock() {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(1.8F));
+        setRegistryName("terracotta_slab");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if (group == ItemGroup.SEARCH || isEnabled())
@@ -30,6 +36,7 @@ public class TerracottaSlabBlock extends SlabBlock {
 
     static public Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaSlabBlocks.UNCOLORED,
                 TerracottaSlabBlocks.WHITE,
                 TerracottaSlabBlocks.ORANGE,
                 TerracottaSlabBlocks.MAGENTA,

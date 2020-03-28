@@ -1,4 +1,5 @@
 {
+  "block.lottaterracotta.terracotta_slab": "Terracotta Slab",
   "block.lottaterracotta.red_terracotta_slab": "Red Terracotta Slab",
   "block.lottaterracotta.yellow_terracotta_slab": "Yellow Terracotta Slab",
   "block.lottaterracotta.green_terracotta_slab": "Green Terracotta Slab",
@@ -16,6 +17,7 @@
   "block.lottaterracotta.purple_terracotta_slab": "Purple Terracotta Slab",
   "block.lottaterracotta.gray_terracotta_slab": "Gray Terracotta Slab",
 
+  "block.lottaterracotta.terracotta_stairs": "Terracotta Stairs",
   "block.lottaterracotta.red_terracotta_stairs": "Red Terracotta Stairs",
   "block.lottaterracotta.yellow_terracotta_stairs": "Yellow Terracotta Stairs",
   "block.lottaterracotta.green_terracotta_stairs": "Green Terracotta Stairs",
@@ -33,6 +35,7 @@
   "block.lottaterracotta.purple_terracotta_stairs": "Purple Terracotta Stairs",
   "block.lottaterracotta.gray_terracotta_stairs": "Gray Terracotta Stairs",
 
+  "block.lottaterracotta.terracotta_wall": "Terracotta Wall",
   "block.lottaterracotta.red_terracotta_wall": "Red Terracotta Wall",
   "block.lottaterracotta.yellow_terracotta_wall": "Yellow Terracotta Wall",
   "block.lottaterracotta.green_terracotta_wall": "Green Terracotta Wall",
@@ -50,6 +53,7 @@
   "block.lottaterracotta.purple_terracotta_wall": "Purple Terracotta Wall",
   "block.lottaterracotta.gray_terracotta_wall": "Gray Terracotta Wall",
 
+  "block.lottaterracotta.terracotta_button": "Terracotta Button",
   "block.lottaterracotta.red_terracotta_button": "Red Terracotta Button",
   "block.lottaterracotta.yellow_terracotta_button": "Yellow Terracotta Button",
   "block.lottaterracotta.green_terracotta_button": "Green Terracotta Button",
@@ -67,6 +71,7 @@
   "block.lottaterracotta.purple_terracotta_button": "Purple Terracotta Button",
   "block.lottaterracotta.gray_terracotta_button": "Gray Terracotta Button",
 
+  "block.lottaterracotta.terracotta_pressure_plate": "Terracotta Pressure Plate",
   "block.lottaterracotta.red_terracotta_pressure_plate": "Red Terracotta Pressure Plate",
   "block.lottaterracotta.yellow_terracotta_pressure_plate": "Yellow Terracotta Pressure Plate",
   "block.lottaterracotta.green_terracotta_pressure_plate": "Green Terracotta Pressure Plate",
@@ -84,6 +89,7 @@
   "block.lottaterracotta.purple_terracotta_pressure_plate": "Purple Terracotta Pressure Plate",
   "block.lottaterracotta.gray_terracotta_pressure_plate": "Gray Terracotta Pressure Plate",
 
+  "block.lottaterracotta.terracotta_fence": "Terracotta Fence",
   "block.lottaterracotta.red_terracotta_fence": "Red Terracotta Fence",
   "block.lottaterracotta.yellow_terracotta_fence": "Yellow Terracotta Fence",
   "block.lottaterracotta.green_terracotta_fence": "Green Terracotta Fence",
@@ -101,6 +107,7 @@
   "block.lottaterracotta.purple_terracotta_fence": "Purple Terracotta Fence",
   "block.lottaterracotta.gray_terracotta_fence": "Gray Terracotta Fence",
 
+  "block.lottaterracotta.terracotta_fence_gate": "Terracotta Fence Gate",
   "block.lottaterracotta.red_terracotta_fence_gate": "Red Terracotta Fence Gate",
   "block.lottaterracotta.yellow_terracotta_fence_gate": "Yellow Terracotta Fence Gate",
   "block.lottaterracotta.green_terracotta_fence_gate": "Green Terracotta Fence Gate",
@@ -118,6 +125,7 @@
   "block.lottaterracotta.purple_terracotta_fence_gate": "Purple Terracotta Fence Gate",
   "block.lottaterracotta.gray_terracotta_fence_gate": "Gray Terracotta Fence Gate",
 
+  "block.lottaterracotta.terracotta_ladder": "Terracotta Ladder",
   "block.lottaterracotta.red_terracotta_ladder": "Red Terracotta Ladder",
   "block.lottaterracotta.yellow_terracotta_ladder": "Yellow Terracotta Ladder",
   "block.lottaterracotta.green_terracotta_ladder": "Green Terracotta Ladder",
@@ -135,6 +143,7 @@
   "block.lottaterracotta.purple_terracotta_ladder": "Purple Terracotta Ladder",
   "block.lottaterracotta.gray_terracotta_ladder": "Gray Terracotta Ladder",
 
+  "block.lottaterracotta.terracotta_sign": "Terracotta Sign",
   "block.lottaterracotta.red_terracotta_sign": "Red Terracotta Sign",
   "block.lottaterracotta.yellow_terracotta_sign": "Yellow Terracotta Sign",
   "block.lottaterracotta.green_terracotta_sign": "Green Terracotta Sign",
@@ -152,6 +161,7 @@
   "block.lottaterracotta.purple_terracotta_sign": "Purple Terracotta Sign",
   "block.lottaterracotta.gray_terracotta_sign": "Gray Terracotta Sign",
 
+  "block.lottaterracotta.terracotta_lever": "Terracotta Lever",
   "block.lottaterracotta.red_terracotta_lever": "Red Terracotta Lever",
   "block.lottaterracotta.yellow_terracotta_lever": "Yellow Terracotta Lever",
   "block.lottaterracotta.green_terracotta_lever": "Green Terracotta Lever",

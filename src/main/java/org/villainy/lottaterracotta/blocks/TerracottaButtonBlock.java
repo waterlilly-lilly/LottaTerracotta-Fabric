@@ -3,6 +3,7 @@ package org.villainy.lottaterracotta.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.StoneButtonBlock;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -23,6 +24,11 @@ public class TerracottaButtonBlock extends StoneButtonBlock {
         setRegistryName(dyeColor.getName() + "_terracotta_button");
     }
 
+    public TerracottaButtonBlock() {
+        super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE));
+        setRegistryName("terracotta_button");
+    }
+
     @Override
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
         if(group == ItemGroup.SEARCH || isEnabled())
@@ -31,6 +37,7 @@ public class TerracottaButtonBlock extends StoneButtonBlock {
 
     public static Stream<Block> allBlocks() {
         return Stream.of(
+                TerracottaButtonBlocks.UNCOLORED,
                 TerracottaButtonBlocks.WHITE,
                 TerracottaButtonBlocks.ORANGE,
                 TerracottaButtonBlocks.MAGENTA,
