@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_fence_gates",
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "key": {
+    "#": {
+      "item": "lottaterracotta:red_terracotta_slab"
+    },
+    "W": {
+      "item": "minecraft:red_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:red_terracotta_fence_gate"
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "fences"
+    }
+  ]
+}

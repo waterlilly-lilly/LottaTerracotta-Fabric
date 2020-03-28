@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_ladders",
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "lottaterracotta:lime_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:lime_terracotta_ladder",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "ladders"
+    }
+  ]
+}

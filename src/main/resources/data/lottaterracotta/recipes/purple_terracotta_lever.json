@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purple_terracotta"
+    },
+    "X": {
+      "item": "lottaterracotta:white_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:purple_terracotta_lever"
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "levers"
+    }
+  ]
+}

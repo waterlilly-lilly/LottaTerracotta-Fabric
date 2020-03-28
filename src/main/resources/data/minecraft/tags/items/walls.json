@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "lottaterracotta:purple_terracotta_wall",
+    "lottaterracotta:yellow_terracotta_wall",
+    "lottaterracotta:brown_terracotta_wall",
+    "lottaterracotta:cyan_terracotta_wall",
+    "lottaterracotta:blue_terracotta_wall",
+    "lottaterracotta:green_terracotta_wall",
+    "lottaterracotta:black_terracotta_wall",
+    "lottaterracotta:light_gray_terracotta_wall",
+    "lottaterracotta:white_terracotta_wall",
+    "lottaterracotta:magenta_terracotta_wall",
+    "lottaterracotta:light_blue_terracotta_wall",
+    "lottaterracotta:pink_terracotta_wall",
+    "lottaterracotta:lime_terracotta_wall",
+    "lottaterracotta:red_terracotta_wall",
+    "lottaterracotta:orange_terracotta_wall",
+    "lottaterracotta:gray_terracotta_wall"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "{{ name }}"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_wall",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "walls"
+    }
+  ]
+} 

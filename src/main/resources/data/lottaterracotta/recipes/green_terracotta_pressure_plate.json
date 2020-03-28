@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_pressure_plates",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:green_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:green_terracotta_pressure_plate"
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "pressure_plates"
+    }
+  ]
+}

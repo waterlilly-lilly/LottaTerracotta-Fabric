@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_pressure_plates",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:{{ name }}"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_pressure_plate"
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "pressure_plates"
+    }
+  ]
+}

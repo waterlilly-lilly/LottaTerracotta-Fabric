@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_walls",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pink_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:pink_terracotta_wall",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "walls"
+    }
+  ]
+} 

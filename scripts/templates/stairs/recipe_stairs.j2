@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "{{ name }}"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_stairs",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "stairs"
+    }
+  ]
+} 

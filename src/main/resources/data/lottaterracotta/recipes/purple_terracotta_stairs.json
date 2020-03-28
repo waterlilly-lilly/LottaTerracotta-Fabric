@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "purple_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:purple_terracotta_stairs",
+    "count": 4
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "stairs"
+    }
+  ]
+} 

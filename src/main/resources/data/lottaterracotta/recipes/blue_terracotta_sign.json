@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "lottaterracotta:blue_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:blue_terracotta_sign",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "signs"
+    }
+  ]
+}

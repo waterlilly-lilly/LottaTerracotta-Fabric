@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:orange_terracotta"
+    }
+  ],
+  "result": {
+    "item": "lottaterracotta:orange_terracotta_button"
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "buttons"
+    }
+  ]
+}

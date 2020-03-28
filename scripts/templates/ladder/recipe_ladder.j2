@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_ladders",
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "{{ modid }}:{{ name }}_slab"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_ladder",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "ladders"
+    }
+  ]
+}

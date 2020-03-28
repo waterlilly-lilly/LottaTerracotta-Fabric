@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "{{ modid }}:{{ name }}_slab"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_sign",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "signs"
+    }
+  ]
+}

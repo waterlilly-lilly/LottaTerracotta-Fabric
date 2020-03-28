@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "yellow_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:yellow_terracotta_slab",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "slabs"
+    }
+  ]
+} 

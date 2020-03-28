@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_fences",
+  "pattern": [
+    "#-#",
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:magenta_terracotta"
+    },
+    "-": {
+      "item": "lottaterracotta:magenta_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:magenta_terracotta_fence",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "fences"
+    }
+  ]
+}

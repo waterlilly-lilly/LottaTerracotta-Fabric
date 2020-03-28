@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:{{ name }}"
+    },
+    "X": {
+      "item": "{{ modid }}:white_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_lever"
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "levers"
+    }
+  ]
+}

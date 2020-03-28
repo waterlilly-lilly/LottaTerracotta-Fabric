@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:yellow_terracotta"
+    }
+  ],
+  "result": {
+    "item": "lottaterracotta:yellow_terracotta_button"
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "buttons"
+    }
+  ]
+}
