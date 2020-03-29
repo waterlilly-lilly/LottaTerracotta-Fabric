@@ -7,6 +7,6 @@ import org.villainy.lottaterracotta.tileEntities.TerracottaSignTileEntity;
 @ObjectHolder("lottaterracotta")
 public class TileEntityTypes {
 
-    @ObjectHolder("terracotta_sign")
+    @ObjectHolder("terracotta_sign_tile_entity")
     public static final TileEntityType<TerracottaSignTileEntity> TERRACOTTA_SIGN = null;
 }

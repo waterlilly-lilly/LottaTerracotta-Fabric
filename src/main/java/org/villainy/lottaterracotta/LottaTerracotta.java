@@ -156,6 +156,7 @@ public class LottaTerracotta
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event) {
             TileEntityType<?> terracottaSignType = TileEntityType.Builder.create(TerracottaSignTileEntity::new,
+                    TerracottaSignBlocks.UNCOLORED,
                     TerracottaSignBlocks.WHITE,
                     TerracottaSignBlocks.ORANGE,
                     TerracottaSignBlocks.MAGENTA,
@@ -173,7 +174,7 @@ public class LottaTerracotta
                     TerracottaSignBlocks.RED,
                     TerracottaSignBlocks.BLACK
             ).build(null);
-            terracottaSignType.setRegistryName(MODID, "terracotta_sign");
+            terracottaSignType.setRegistryName(MODID, "terracotta_sign_tile_entity");
             event.getRegistry().register(terracottaSignType);
         }
 

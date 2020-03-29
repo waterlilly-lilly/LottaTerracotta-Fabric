@@ -25,6 +25,7 @@ import static net.minecraft.state.properties.BlockStateProperties.*;
 public class TerracottaSignTileEntityRenderer extends TileEntityRenderer<TerracottaSignTileEntity> {
     private static final Map<DyeColor, ResourceLocation> signTextures =
             Arrays.stream(DyeColor.values()).collect(Collectors.toMap(c -> c, c -> new ResourceLocation("textures/block/" + c.getTranslationKey() + "_terracotta.png")));
+    private static final ResourceLocation plainSignTexture = new ResourceLocation("textures/block/terracotta.png");
 
     private final SignModel model = new SignModel();
 
@@ -33,7 +34,12 @@ public class TerracottaSignTileEntityRenderer extends TileEntityRenderer<Terraco
     }
 
     private ResourceLocation getSignTexture(Block block) {
-        return signTextures.get(((TerracottaSignBlock) block).dyeColor);
+        TerracottaSignBlock signBlock = (TerracottaSignBlock) block;
+        if (signBlock.dyeColor == null) {
+            return plainSignTexture;
+        } else {
+            return signTextures.get(signBlock.dyeColor);
+        }
     }
 
     @Override

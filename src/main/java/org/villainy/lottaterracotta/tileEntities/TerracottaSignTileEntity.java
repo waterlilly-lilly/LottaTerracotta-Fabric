@@ -5,7 +5,7 @@ import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
 
 public class TerracottaSignTileEntity extends SignTileEntity {
-    @ObjectHolder("lottaterracotta:terracotta_sign")
+    @ObjectHolder("lottaterracotta:terracotta_sign_tile_entity")
     public static TileEntityType<TerracottaSignTileEntity> TYPE;
 
     @Override
