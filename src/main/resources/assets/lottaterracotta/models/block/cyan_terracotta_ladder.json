@@ -1,5 +1,5 @@
 {
-	"parent": "block/cube",
+	"parent": "block/block",
 	"textures": {
 		"o": "block/cyan_terracotta",
 		"particle": "block/cyan_terracotta"
