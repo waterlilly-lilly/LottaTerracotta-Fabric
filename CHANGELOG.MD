@@ -1,4 +1,9 @@
-### v1.0.0 Current Version
+### v1.1.0 Current Version
+
+#### New features
+* Terracotta vertical slabs
+
+### v1.0.0
 
 #### New features
 * Terracotta slabs
