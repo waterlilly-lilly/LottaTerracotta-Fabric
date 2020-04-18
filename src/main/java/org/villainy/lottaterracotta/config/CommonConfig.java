@@ -12,9 +12,9 @@ final class CommonConfig {
     final ForgeConfigSpec.BooleanValue enablePressurePlates;
     final ForgeConfigSpec.BooleanValue enableFences;
     final ForgeConfigSpec.BooleanValue enableLadders;
-    final ForgeConfigSpec.BooleanValue enableCake;
     final ForgeConfigSpec.BooleanValue enableSigns;
     final ForgeConfigSpec.BooleanValue enableLevers;
+    final ForgeConfigSpec.BooleanValue enableVerticalSlabs;
 
     CommonConfig(final ForgeConfigSpec.Builder builder) {
         builder.push("general");
@@ -46,10 +46,6 @@ final class CommonConfig {
                 .comment("Enable terracotta ladders")
                 .translation(LottaTerracotta.MODID + ".config.enableLadders")
                 .define("enableLadders", true);
-        enableCake = builder
-                .comment("Enable terracotta cake")
-                .translation(LottaTerracotta.MODID + ".config.enableCake")
-                .define("enableCake", true);
         enableSigns = builder
                 .comment("Enable terracotta signs")
                 .translation(LottaTerracotta.MODID + ".config.enableSigns")
@@ -58,6 +54,10 @@ final class CommonConfig {
                 .comment("Enable terracotta levers")
                 .translation(LottaTerracotta.MODID + ".config.enableLevers")
                 .define("enableLevers", true);
+        enableVerticalSlabs = builder
+                .comment("Enable terracotta vertical slabs")
+                .translation(LottaTerracotta.MODID + ".config.enableVerticalSlabs")
+                .define("enableVerticalSlabs", true);
         builder.pop();
     }
 

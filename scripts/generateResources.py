@@ -69,7 +69,7 @@ def generateTags():
             name = file.replace('.json', '')
             if '_wall' in name and 'sign' not in name:
                 walls.append(name)
-            elif ('_slab' in name):
+            elif ('_slab' in name and 'vertical' not in name):
                 slabs.append(name)
             elif '_stairs' in name:
                 stairs.append(name)
@@ -191,6 +191,14 @@ signAssets = {
     'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_sign.json'
 }
 
+verticalSlabAssets = {
+    'vertical_slab/blockstate_vertical_slab.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_vertical_slab.json',
+    'vertical_slab/model_block_vertical_slab.j2': 'assets/lottaterracotta/models/block/%sterracotta_vertical_slab.json',
+    'vertical_slab/model_item_vertical_slab.j2': 'assets/lottaterracotta/models/item/%sterracotta_vertical_slab.json',
+    'vertical_slab/recipe_vertical_slab.j2': 'data/lottaterracotta/recipes/%sterracotta_vertical_slab.json',
+    'vertical_slab/loot_table_vertical_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_vertical_slab.json'
+}
+
 blockTypes = {
     'slab' : slabAssets,
     'stairs': stairsAssets,
@@ -201,7 +209,8 @@ blockTypes = {
     'fence': fenceAssets,
     'fence_gate': fenceGateAssets,
     'ladder': ladderAssets,
-    'sign': signAssets
+    'sign': signAssets,
+    'vertical_slab': verticalSlabAssets,
 }
 
 uncoloredBlockTypes = {
@@ -214,7 +223,8 @@ uncoloredBlockTypes = {
     'fence': fenceAssets,
     'fence_gate': fenceGateAssets,
     'ladder': ladderAssets,
-    'sign': signAssets
+    'sign': signAssets,
+    'vertical_slab': verticalSlabAssets,
 }
 
 

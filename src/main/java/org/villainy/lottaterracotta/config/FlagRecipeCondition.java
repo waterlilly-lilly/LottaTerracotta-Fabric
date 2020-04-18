@@ -45,14 +45,14 @@ public class FlagRecipeCondition implements ICondition {
         if (flag.equals("ladders")) {
             return LottaTerracottaConfig.enableLadders;
         }
-        if (flag.equals("cake")) {
-            return LottaTerracottaConfig.enableCake;
-        }
         if (flag.equals("signs")) {
             return LottaTerracottaConfig.enableSigns;
         }
         if (flag.equals("levers")) {
             return LottaTerracottaConfig.enableLevers;
+        }
+        if (flag.equals("vertical_slabs")) {
+            return LottaTerracottaConfig.enableVerticalSlabs;
         }
         return true;
     }

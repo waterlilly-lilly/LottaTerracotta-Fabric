@@ -101,6 +101,7 @@ public class LottaTerracotta
                 blockRegistry.register(new TerracottaLadderBlock(dyeColor));
                 blockRegistry.register(new TerracottaSignBlock(dyeColor));
                 blockRegistry.register(new TerracottaLeverBlock(dyeColor));
+                blockRegistry.register(new TerracottaVerticalSlabBlock(dyeColor));
             });
 
             // Register uncolored versions
@@ -115,6 +116,7 @@ public class LottaTerracotta
             blockRegistry.register(new TerracottaLadderBlock());
             blockRegistry.register(new TerracottaSignBlock());
             blockRegistry.register(new TerracottaLeverBlock());
+            blockRegistry.register(new TerracottaVerticalSlabBlock());
         }
 
         @SubscribeEvent
@@ -149,6 +151,9 @@ public class LottaTerracotta
                     itemRegistry.register(new TerracottaSignItem(block))
 			);
             TerracottaLeverBlock.allBlocks().forEach (block ->
+                    itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.REDSTONE))
+            );
+            TerracottaVerticalSlabBlock.allBlocks().forEach (block ->
                     itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.REDSTONE))
             );
         }
