@@ -9,8 +9,8 @@ public final class LottaTerracottaConfig {
     public static boolean enablePressurePlates;
     public static boolean enableFences;
     public static boolean enableLadders;
-    public static boolean enableCake;
     public static boolean enableSigns;
     public static boolean enableLevers;
+    public static boolean enableVerticalSlabs;
 
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "terracotta_vertical_slabs",
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "gray_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:gray_terracotta_vertical_slab",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "vertical_slabs"
+    }
+  ]
+} 

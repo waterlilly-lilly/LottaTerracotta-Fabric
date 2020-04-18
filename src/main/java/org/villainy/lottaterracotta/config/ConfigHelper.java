@@ -17,9 +17,9 @@ public final class ConfigHelper {
         LottaTerracottaConfig.enablePressurePlates = ConfigHolder.COMMON.enablePressurePlates.get();
         LottaTerracottaConfig.enableFences = ConfigHolder.COMMON.enableFences.get();
         LottaTerracottaConfig.enableLadders = ConfigHolder.COMMON.enableLadders.get();
-        LottaTerracottaConfig.enableCake = ConfigHolder.COMMON.enableCake.get();
         LottaTerracottaConfig.enableSigns = ConfigHolder.COMMON.enableSigns.get();
         LottaTerracottaConfig.enableLevers = ConfigHolder.COMMON.enableLevers.get();
+        LottaTerracottaConfig.enableVerticalSlabs = ConfigHolder.COMMON.enableVerticalSlabs.get();
     }
 
     public static void setValueAndSave(final ModConfig modConfig, final String path, final Object newValue) {
