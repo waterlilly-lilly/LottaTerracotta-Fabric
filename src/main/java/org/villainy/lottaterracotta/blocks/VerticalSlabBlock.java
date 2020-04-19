@@ -26,17 +26,18 @@ import net.minecraft.world.IWorld;
 
 import javax.annotation.Nonnull;
 
+@SuppressWarnings("deprecation")
 public class VerticalSlabBlock extends Block implements IWaterLoggable {
     public static final EnumProperty<VerticalSlabType> TYPE = EnumProperty.create("type", VerticalSlabType.class);
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    public VerticalSlabBlock(Properties properties) {
+    public VerticalSlabBlock(Block.Properties properties) {
         super(properties);
         setDefaultState(getDefaultState().with(TYPE, VerticalSlabType.NORTH).with(WATERLOGGED, false));
     }
 
     @Override
-    public boolean isTransparent(BlockState state) {
+    public boolean func_220074_n(BlockState state) {
         return state.get(TYPE) != VerticalSlabType.DOUBLE;
     }
 
@@ -82,7 +83,6 @@ public class VerticalSlabBlock extends Block implements IWaterLoggable {
                 (useContext.getFace() == slabtype.direction && getDirectionForPlacement(useContext) == slabtype.direction);
     }
 
-    @SuppressWarnings("deprecation")
     @Override
     public IFluidState getFluidState(BlockState state) {
         return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
@@ -98,7 +98,6 @@ public class VerticalSlabBlock extends Block implements IWaterLoggable {
         return state.get(TYPE) != VerticalSlabType.DOUBLE && IWaterLoggable.super.canContainFluid(worldIn, pos, state, fluidIn);
     }
 
-    @SuppressWarnings("deprecation")
     @Override
     public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
         if(stateIn.get(WATERLOGGED)) {
@@ -162,4 +161,3 @@ public class VerticalSlabBlock extends Block implements IWaterLoggable {
         }
     }
 }
-
