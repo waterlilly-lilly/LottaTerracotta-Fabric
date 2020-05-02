@@ -20,6 +20,7 @@ public final class ConfigHelper {
         LottaTerracottaConfig.enableSigns = ConfigHolder.COMMON.enableSigns.get();
         LottaTerracottaConfig.enableLevers = ConfigHolder.COMMON.enableLevers.get();
         LottaTerracottaConfig.enableVerticalSlabs = ConfigHolder.COMMON.enableVerticalSlabs.get();
+        LottaTerracottaConfig.enableTiles = ConfigHolder.COMMON.enableTiles.get();
     }
 
     public static void setValueAndSave(final ModConfig modConfig, final String path, final Object newValue) {

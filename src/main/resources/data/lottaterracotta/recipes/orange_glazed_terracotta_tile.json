@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:orange_glazed_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:orange_glazed_terracotta_tile",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "tiles"
+    }
+  ]
+}

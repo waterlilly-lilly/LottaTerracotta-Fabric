@@ -8,7 +8,7 @@
     <module name="LottaTerracotta.main"/>
     <envs>
       <env name="MOD_CLASSES" value="lottaterracotta%%$PROJECT_DIR$/build/resources/main:lottaterracotta%%$PROJECT_DIR$/build/classes/java/main"/>
-      <env name="MCP_MAPPINGS" value="snapshot_20200402-1.15.1"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20200418-1.15.1"/>
       <env name="MCP_VERSION" value="20200307.202953"/>
       <env name="FORGE_VERSION" value="31.1.35"/>
       <env name="FORGE_GROUP" value="net.minecraftforge"/>

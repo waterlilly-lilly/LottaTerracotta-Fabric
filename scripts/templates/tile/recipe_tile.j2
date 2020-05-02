@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tile",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:{{ name }}"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_tile",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "tiles"
+    }
+  ]
+}

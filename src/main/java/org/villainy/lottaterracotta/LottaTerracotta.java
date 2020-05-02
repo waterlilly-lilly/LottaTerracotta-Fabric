@@ -102,6 +102,7 @@ public class LottaTerracotta
                 blockRegistry.register(new TerracottaSignBlock(dyeColor));
                 blockRegistry.register(new TerracottaLeverBlock(dyeColor));
                 blockRegistry.register(new TerracottaVerticalSlabBlock(dyeColor));
+                blockRegistry.register(new GlazedTerracottaTileBlock(dyeColor));
             });
 
             // Register uncolored versions
@@ -155,6 +156,9 @@ public class LottaTerracotta
             );
             TerracottaVerticalSlabBlock.allBlocks().forEach (block ->
                     itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.REDSTONE))
+            );
+            GlazedTerracottaTileBlock.allBlocks().forEach (block ->
+                    itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.DECORATIONS))
             );
         }
 
