@@ -9,8 +9,8 @@
     <envs>
       <env name="MOD_CLASSES" value="lottaterracotta%%$PROJECT_DIR$/build/resources/main:lottaterracotta%%$PROJECT_DIR$/build/classes/java/main"/>
       <env name="MCP_MAPPINGS" value="snapshot_20200418-1.15.1"/>
-      <env name="MCP_VERSION" value="20200307.202953"/>
-      <env name="FORGE_VERSION" value="31.1.35"/>
+      <env name="MCP_VERSION" value="20200414.225201"/>
+      <env name="FORGE_VERSION" value="31.1.63"/>
       <env name="FORGE_GROUP" value="net.minecraftforge"/>
       <env name="target" value="fmluserdevserver"/>
       <env name="MC_VERSION" value="1.15.2"/>
