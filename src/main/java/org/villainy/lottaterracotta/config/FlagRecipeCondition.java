@@ -54,6 +54,9 @@ public class FlagRecipeCondition implements ICondition {
         if (flag.equals("vertical_slabs")) {
             return LottaTerracottaConfig.enableVerticalSlabs;
         }
+        if (flag.equals("tiles")) {
+            return LottaTerracottaConfig.enableTiles;
+        }
         return true;
     }
 

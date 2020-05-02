@@ -39,6 +39,10 @@ def generateBlockAllColors(blockType, templateFile, outputFile):
     for color in COLORS:
             generateBlock(color + '_terracotta', blockType, template, output % (color + "_"))
 
+def generateGlazedBlockAllColors(blockType, templateFile, outputFile):
+    for color in COLORS:
+            generateBlock(color + '_glazed_terracotta', blockType, template, output % (color + "_glazed_"))
+
 
 def writeTagFile(filename, blocks):
     first = True
@@ -199,6 +203,14 @@ verticalSlabAssets = {
     'vertical_slab/loot_table_vertical_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_vertical_slab.json'
 }
 
+tileAssets = {
+    'tile/blockstate_tile.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_tile.json',
+    'tile/model_block_tile.j2': 'assets/lottaterracotta/models/block/%sterracotta_tile.json',
+    'tile/model_item_tile.j2': 'assets/lottaterracotta/models/item/%sterracotta_tile.json',
+    'tile/recipe_tile.j2': 'data/lottaterracotta/recipes/%sterracotta_tile.json',
+    'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_tile.json'
+}
+
 blockTypes = {
     'slab' : slabAssets,
     'stairs': stairsAssets,
@@ -227,11 +239,20 @@ uncoloredBlockTypes = {
     'vertical_slab': verticalSlabAssets,
 }
 
+glazedBlockTypes = {
+    'tile' : tileAssets,
+}
+
 
 # Colored variants
 for blockType, assets in blockTypes.items():
     for template, output in assets.items():
         generateBlockAllColors(blockType, template, output)
+
+# Glazed variants
+for blockType, assets in glazedBlockTypes.items():
+    for template, output in assets.items():
+        generateGlazedBlockAllColors(blockType, template, output)
 
 # Uncolored variants
 for blockType, assets in uncoloredBlockTypes.items():

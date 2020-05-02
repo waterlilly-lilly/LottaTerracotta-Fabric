@@ -15,6 +15,7 @@ final class CommonConfig {
     final ForgeConfigSpec.BooleanValue enableSigns;
     final ForgeConfigSpec.BooleanValue enableLevers;
     final ForgeConfigSpec.BooleanValue enableVerticalSlabs;
+    final ForgeConfigSpec.BooleanValue enableTiles;
 
     CommonConfig(final ForgeConfigSpec.Builder builder) {
         builder.push("general");
@@ -58,6 +59,10 @@ final class CommonConfig {
                 .comment("Enable terracotta vertical slabs")
                 .translation(LottaTerracotta.MODID + ".config.enableVerticalSlabs")
                 .define("enableVerticalSlabs", true);
+        enableTiles = builder
+                .comment("Enable terracotta tiles")
+                .translation(LottaTerracotta.MODID + ".config.enableTiles")
+                .define("enableTiles", true);
         builder.pop();
     }
 

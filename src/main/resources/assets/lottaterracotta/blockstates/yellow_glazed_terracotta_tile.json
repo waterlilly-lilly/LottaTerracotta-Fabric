@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=south": { "model": "lottaterracotta:block/yellow_glazed_terracotta_tile" },
+        "facing=west": { "model": "lottaterracotta:block/yellow_glazed_terracotta_tile", "y": 90 },
+        "facing=north": { "model": "lottaterracotta:block/yellow_glazed_terracotta_tile", "y": 180 },
+        "facing=east": { "model": "lottaterracotta:block/yellow_glazed_terracotta_tile", "y": 270 }
+    }
+}

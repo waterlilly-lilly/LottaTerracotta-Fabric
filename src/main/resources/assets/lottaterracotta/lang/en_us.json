@@ -195,5 +195,22 @@
   "block.lottaterracotta.lime_terracotta_vertical_slab": "Lime Terracotta Vertical Slab",
   "block.lottaterracotta.cyan_terracotta_vertical_slab": "Cyan Terracotta Vertical Slab",
   "block.lottaterracotta.purple_terracotta_vertical_slab": "Purple Terracotta Vertical Slab",
-  "block.lottaterracotta.gray_terracotta_vertical_slab": "Gray Terracotta Vertical Slab"
+  "block.lottaterracotta.gray_terracotta_vertical_slab": "Gray Terracotta Vertical Slab",
+
+  "block.lottaterracotta.red_glazed_terracotta_tile": "Red Glazed Terracotta Tile",
+  "block.lottaterracotta.yellow_glazed_terracotta_tile": "Yellow Glazed Terracotta Tile",
+  "block.lottaterracotta.green_glazed_terracotta_tile": "Green Glazed Terracotta Tile",
+  "block.lottaterracotta.black_glazed_terracotta_tile": "Black Glazed Terracotta Tile",
+  "block.lottaterracotta.brown_glazed_terracotta_tile": "Brown Glazed Terracotta Tile",
+  "block.lottaterracotta.blue_glazed_terracotta_tile": "Blue Glazed Terracotta Tile",
+  "block.lottaterracotta.white_glazed_terracotta_tile": "White Glazed Terracotta Tile",
+  "block.lottaterracotta.orange_glazed_terracotta_tile": "Orange Glazed Terracotta Tile",
+  "block.lottaterracotta.light_blue_glazed_terracotta_tile": "Light Blue Glazed Terracotta Tile",
+  "block.lottaterracotta.magenta_glazed_terracotta_tile": "Magenta Glazed Terracotta Tile",
+  "block.lottaterracotta.pink_glazed_terracotta_tile": "Pink Glazed Terracotta Tile",
+  "block.lottaterracotta.light_gray_glazed_terracotta_tile": "Light Gray Glazed Terracotta Tile",
+  "block.lottaterracotta.lime_glazed_terracotta_tile": "Lime Glazed Terracotta Tile",
+  "block.lottaterracotta.cyan_glazed_terracotta_tile": "Cyan Glazed Terracotta Tile",
+  "block.lottaterracotta.purple_glazed_terracotta_tile": "Purple Glazed Terracotta Tile",
+  "block.lottaterracotta.gray_glazed_terracotta_tile": "Gray Glazed Terracotta Tile"
 }
