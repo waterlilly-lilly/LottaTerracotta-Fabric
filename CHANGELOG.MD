@@ -1,4 +1,11 @@
 ### v1.1.0 Current Version
+
+#### New features
+* Glazed terracotta tiles
+
+### v1.1.0
+
+#### New features
 * Terracotta vertical slabs
 
 ### v1.0.0
