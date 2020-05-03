@@ -1,4 +1,4 @@
-### v1.1.0 Current Version
+### v1.2.0 Current Version
 
 #### New features
 * Glazed terracotta tiles
