@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glazed_terracotta_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magenta_glazed_terracotta"
+    }
+  },
+  "result": {
+    "item": "lottaterracotta:magenta_glazed_terracotta_slab",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "slabs"
+    }
+  ]
+} 

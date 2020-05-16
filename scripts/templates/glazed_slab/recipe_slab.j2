@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glazed_terracotta_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "{{ name }}"
+    }
+  },
+  "result": {
+    "item": "{{ modid }}:{{ name }}_slab",
+    "count": 6
+  },
+  "conditions": [
+    {
+      "type": "{{ modid }}:flag",
+      "flag": "slabs"
+    }
+  ]
+} 
