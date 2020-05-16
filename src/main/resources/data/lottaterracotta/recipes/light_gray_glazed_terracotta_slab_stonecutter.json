@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:light_gray_glazed_terracotta"
+  },
+  "result": "lottaterracotta:light_gray_glazed_terracotta_slab",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "slabs"
+    }
+  ]
+}

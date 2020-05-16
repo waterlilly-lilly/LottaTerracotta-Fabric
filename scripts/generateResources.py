@@ -207,12 +207,22 @@ verticalSlabAssets = {
     'vertical_slab/loot_table_vertical_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_vertical_slab.json'
 }
 
-tileAssets = {
-    'tile/blockstate_tile.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_tile.json',
-    'tile/model_block_tile.j2': 'assets/lottaterracotta/models/block/%sterracotta_tile.json',
-    'tile/model_item_tile.j2': 'assets/lottaterracotta/models/item/%sterracotta_tile.json',
-    'tile/recipe_tile.j2': 'data/lottaterracotta/recipes/%sterracotta_tile.json',
+glazedTileAssets = {
+    'glazed_tile/blockstate_tile.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_tile.json',
+    'glazed_tile/model_block_tile.j2': 'assets/lottaterracotta/models/block/%sterracotta_tile.json',
+    'glazed_tile/model_item_tile.j2': 'assets/lottaterracotta/models/item/%sterracotta_tile.json',
+    'glazed_tile/recipe_tile.j2': 'data/lottaterracotta/recipes/%sterracotta_tile.json',
     'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_tile.json'
+}
+
+glazedSlabAssets = {
+    'glazed_slab/blockstate_slab.j2' : 'assets/lottaterracotta/blockstates/%sterracotta_slab.json',
+    'glazed_slab/model_block_slab.j2': 'assets/lottaterracotta/models/block/%sterracotta_slab.json',
+    'glazed_slab/model_block_slab_top.j2': 'assets/lottaterracotta/models/block/%sterracotta_slab_top.json',
+    'glazed_slab/model_item_slab.j2': 'assets/lottaterracotta/models/item/%sterracotta_slab.json',
+    'glazed_slab/recipe_slab.j2': 'data/lottaterracotta/recipes/%sterracotta_slab.json',
+    'glazed_slab/recipe_slab_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_slab_stonecutter.json',
+    'glazed_slab/loot_table_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_slab.json'
 }
 
 blockTypes = {
@@ -244,7 +254,8 @@ uncoloredBlockTypes = {
 }
 
 glazedBlockTypes = {
-    'tile' : tileAssets,
+    'tile' : glazedTileAssets,
+    'slab': glazedSlabAssets
 }
 
 

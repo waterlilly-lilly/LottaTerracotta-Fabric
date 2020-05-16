@@ -1,0 +1,7 @@
+{
+  "parent": "lottaterracotta:block/template_glazed_terracotta_slab",
+    "textures": {
+        "particle": "block/lime_glazed_terracotta",
+        "pattern": "block/lime_glazed_terracotta"
+    }
+}
