@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:light_gray_terracotta"
+  },
+  "result": "lottaterracotta:light_gray_terracotta_vertical_slab",
+  "count": 2,
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "vertical_slabs"
+    }
+  ]
+}

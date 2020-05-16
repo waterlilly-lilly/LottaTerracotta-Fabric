@@ -106,6 +106,7 @@ slabAssets = {
     'slab/model_block_slab.j2': 'assets/lottaterracotta/models/block/%sterracotta_slab.json',
     'slab/model_item_slab.j2': 'assets/lottaterracotta/models/item/%sterracotta_slab.json',
     'slab/recipe_slab.j2': 'data/lottaterracotta/recipes/%sterracotta_slab.json',
+    'slab/recipe_slab_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_slab_stonecutter.json',
     'slab/loot_table_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_slab.json'
 }
 
@@ -116,6 +117,7 @@ stairsAssets = {
     'stairs/model_block_stairs_outer.j2': 'assets/lottaterracotta/models/block/%sterracotta_stairs_outer.json',
     'stairs/model_item_stairs.j2': 'assets/lottaterracotta/models/item/%sterracotta_stairs.json',
     'stairs/recipe_stairs.j2': 'data/lottaterracotta/recipes/%sterracotta_stairs.json',
+    'stairs/recipe_stairs_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_stairs_stonecutter.json',
     'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_stairs.json'
 }
 
@@ -126,6 +128,7 @@ wallAssets = {
     'wall/model_block_wall_side.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_side.json',
     'wall/model_item_wall.j2': 'assets/lottaterracotta/models/item/%sterracotta_wall.json',
     'wall/recipe_wall.j2': 'data/lottaterracotta/recipes/%sterracotta_wall.json',
+    'wall/recipe_wall_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_wall_stonecutter.json',
     'loot_table_generic.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_wall.json'
 }
 
@@ -200,6 +203,7 @@ verticalSlabAssets = {
     'vertical_slab/model_block_vertical_slab.j2': 'assets/lottaterracotta/models/block/%sterracotta_vertical_slab.json',
     'vertical_slab/model_item_vertical_slab.j2': 'assets/lottaterracotta/models/item/%sterracotta_vertical_slab.json',
     'vertical_slab/recipe_vertical_slab.j2': 'data/lottaterracotta/recipes/%sterracotta_vertical_slab.json',
+    'vertical_slab/recipe_vertical_slab_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_vertical_slab_stonecutter.json',
     'vertical_slab/loot_table_vertical_slab.j2': 'data/lottaterracotta/loot_tables/blocks/%sterracotta_vertical_slab.json'
 }
 

@@ -1,4 +1,9 @@
-### v1.2.0 Current Version
+### v1.2.1 Current Version
+
+#### Enhancements
+* Added stonecutter support
+
+### v1.2.0
 
 #### New features
 * Glazed terracotta tiles

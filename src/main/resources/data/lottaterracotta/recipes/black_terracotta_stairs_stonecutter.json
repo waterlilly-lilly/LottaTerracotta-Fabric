@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:black_terracotta"
+  },
+  "result": "lottaterracotta:black_terracotta_stairs",
+  "count": 1,
+  "conditions": [
+    {
+      "type": "lottaterracotta:flag",
+      "flag": "stairs"
+    }
+  ]
+}
