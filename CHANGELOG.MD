@@ -1,4 +1,12 @@
-### v1.2.1 Current Version
+### v1.3.0 Current Version
+
+#### New features
+* Added glazed terracotta slabs
+
+#### Bug fixes
+* Fixed rendering on terracotta tiles
+
+### v1.2.1
 
 #### Enhancements
 * Added stonecutter support
