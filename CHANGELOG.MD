@@ -1,3 +1,8 @@
+### v1.3.1 Current Version
+
+#### Bug fixes
+* Vertical slabs moved to Building Blocks category
+
 ### v1.3.0 Current Version
 
 #### New features

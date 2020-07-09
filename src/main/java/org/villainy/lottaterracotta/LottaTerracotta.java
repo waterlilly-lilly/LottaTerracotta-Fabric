@@ -156,7 +156,7 @@ public class LottaTerracotta
                     itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.REDSTONE))
             );
             TerracottaVerticalSlabBlock.allBlocks().forEach (block ->
-                    itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.REDSTONE))
+                    itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.BUILDING_BLOCKS))
             );
             GlazedTerracottaTileBlock.allBlocks().forEach (block ->
                     itemRegistry.register(BlockItemHelper.createBasicBlockItem(block, ItemGroup.DECORATIONS))
