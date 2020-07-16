@@ -26,7 +26,7 @@ public class GlazedTerracottaSlabBlock extends SlabBlock {
 
     public GlazedTerracottaSlabBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(1.8F));
-        setRegistryName(dyeColor.getName() + "_glazed_terracotta_slab");
+        setRegistryName(dyeColor.getTranslationKey() + "_glazed_terracotta_slab");
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {

@@ -21,7 +21,7 @@ public class TerracottaButtonBlock extends StoneButtonBlock {
 
     public TerracottaButtonBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor));
-        setRegistryName(dyeColor.getName() + "_terracotta_button");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_button");
     }
 
     public TerracottaButtonBlock() {

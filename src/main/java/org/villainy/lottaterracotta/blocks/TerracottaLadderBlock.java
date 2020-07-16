@@ -37,7 +37,7 @@ public class TerracottaLadderBlock extends LadderBlock {
 
     public TerracottaLadderBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).notSolid().hardnessAndResistance(0.4F).sound(SoundType.LADDER));
-        setRegistryName(dyeColor.getName() + "_terracotta_ladder");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_ladder");
     }
 
     public TerracottaLadderBlock() {

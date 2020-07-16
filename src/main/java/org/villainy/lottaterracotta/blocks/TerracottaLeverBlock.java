@@ -20,7 +20,7 @@ public class TerracottaLeverBlock extends LeverBlock {
 
     public TerracottaLeverBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor));
-        setRegistryName(dyeColor.getName() + "_terracotta_lever");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_lever");
     }
 
     public TerracottaLeverBlock() {

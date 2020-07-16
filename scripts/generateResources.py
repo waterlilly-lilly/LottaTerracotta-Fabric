@@ -126,6 +126,7 @@ wallAssets = {
     'wall/model_block_wall_inventory.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_inventory.json',
     'wall/model_block_wall_post.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_post.json',
     'wall/model_block_wall_side.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_side.json',
+    'wall/model_block_wall_side_tall.j2': 'assets/lottaterracotta/models/block/%sterracotta_wall_side_tall.json',
     'wall/model_item_wall.j2': 'assets/lottaterracotta/models/item/%sterracotta_wall.json',
     'wall/recipe_wall.j2': 'data/lottaterracotta/recipes/%sterracotta_wall.json',
     'wall/recipe_wall_stonecutter.j2': 'data/lottaterracotta/recipes/%sterracotta_wall_stonecutter.json',

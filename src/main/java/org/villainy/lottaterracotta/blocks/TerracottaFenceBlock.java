@@ -21,7 +21,7 @@ public class TerracottaFenceBlock extends FenceBlock {
 
     public TerracottaFenceBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(2.0F, 6.0F));
-        setRegistryName(dyeColor.getName() + "_terracotta_fence");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_fence");
     }
 
     public TerracottaFenceBlock() {

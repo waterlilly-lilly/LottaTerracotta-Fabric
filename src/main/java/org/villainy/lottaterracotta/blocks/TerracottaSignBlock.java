@@ -6,7 +6,7 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.fluid.Fluids;
-import net.minecraft.fluid.IFluidState;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemGroup;
@@ -49,7 +49,7 @@ public class TerracottaSignBlock extends AbstractSignBlock {
                 .hardnessAndResistance(1.0F)
                 .sound(SoundType.STONE), WoodType.OAK);
         this.dyeColor = dyeColor;
-        setRegistryName(dyeColor.getName() + "_terracotta_sign");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_sign");
     }
 
     public TerracottaSignBlock() {
@@ -159,7 +159,7 @@ public class TerracottaSignBlock extends AbstractSignBlock {
     @Nullable
     public BlockState getStateForPlacement(BlockItemUseContext context) {
         BlockState state = this.getDefaultState();
-        IFluidState fluid = context.getWorld().getFluidState(context.getPos());
+        FluidState fluid = context.getWorld().getFluidState(context.getPos());
         IWorldReader world = context.getWorld();
         BlockPos pos = context.getPos();
 

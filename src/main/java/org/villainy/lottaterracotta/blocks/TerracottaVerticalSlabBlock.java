@@ -19,7 +19,7 @@ public class TerracottaVerticalSlabBlock extends VerticalSlabBlock {
 
     public TerracottaVerticalSlabBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(1.8F));
-        setRegistryName(dyeColor.getName() + "_terracotta_vertical_slab");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_vertical_slab");
     }
 
     public TerracottaVerticalSlabBlock() {

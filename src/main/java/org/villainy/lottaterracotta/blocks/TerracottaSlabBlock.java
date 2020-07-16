@@ -20,7 +20,7 @@ public class TerracottaSlabBlock extends SlabBlock {
 
     public TerracottaSlabBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(1.8F));
-        setRegistryName(dyeColor.getName() + "_terracotta_slab");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_slab");
     }
 
     public TerracottaSlabBlock() {

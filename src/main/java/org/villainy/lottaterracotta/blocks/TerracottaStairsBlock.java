@@ -22,7 +22,7 @@ public class TerracottaStairsBlock extends StairsBlock {
 
     public TerracottaStairsBlock(DyeColor dyeColor, BlockState blockState) {
         super(blockState, Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(1.8F));
-        setRegistryName(dyeColor.getName() + "_terracotta_stairs");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_stairs");
     }
 
     public TerracottaStairsBlock(BlockState blockState) {

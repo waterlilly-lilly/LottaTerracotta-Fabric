@@ -24,7 +24,7 @@ public class TerracottaFenceGateBlock extends FenceGateBlock {
         super(Block.Properties.create(Material.ROCK, dyeColor)
                 .hardnessAndResistance(2.0F, 6.0F)
                 .sound(SoundType.STONE));
-        setRegistryName(dyeColor.getName() + "_terracotta_fence_gate");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_fence_gate");
     }
 
     public TerracottaFenceGateBlock() {

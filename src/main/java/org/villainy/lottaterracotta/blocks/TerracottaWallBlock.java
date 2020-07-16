@@ -21,7 +21,7 @@ public class TerracottaWallBlock extends WallBlock {
 
     public TerracottaWallBlock(DyeColor dyeColor) {
         super(Block.Properties.create(Material.ROCK, dyeColor).hardnessAndResistance(1.8F));
-        setRegistryName(dyeColor.getName() + "_terracotta_wall");
+        setRegistryName(dyeColor.getTranslationKey() + "_terracotta_wall");
     }
 
     public TerracottaWallBlock() {

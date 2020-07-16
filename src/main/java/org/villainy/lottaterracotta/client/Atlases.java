@@ -1,6 +1,6 @@
 package org.villainy.lottaterracotta.client;
 
-import net.minecraft.client.renderer.model.Material;
+import net.minecraft.client.renderer.model.RenderMaterial;
 import net.minecraft.item.DyeColor;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -13,28 +13,28 @@ import java.util.Map;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public final class Atlases {
-    private static final Map<DyeColor, Material> TERRACOTTA_MATERIALS;
-    private static final Material PLAIN_TERRACOTTA_MATERIAL;
+    private static final Map<DyeColor, RenderMaterial> TERRACOTTA_MATERIALS;
+    private static final RenderMaterial PLAIN_TERRACOTTA_MATERIAL;
 
     static {
         TERRACOTTA_MATERIALS = makeTerracottaMaterials();
-        PLAIN_TERRACOTTA_MATERIAL = new Material(net.minecraft.client.renderer.Atlases.SIGN_ATLAS,
+        PLAIN_TERRACOTTA_MATERIAL = new RenderMaterial(net.minecraft.client.renderer.Atlases.SIGN_ATLAS,
                 new ResourceLocation("block/terracotta"));
     }
 
     private Atlases() {
     }
 
-    private static Map<DyeColor, Material> makeTerracottaMaterials() {
-        final EnumMap<DyeColor, Material> materials = new EnumMap<>(DyeColor.class);
+    private static Map<DyeColor, RenderMaterial> makeTerracottaMaterials() {
+        final EnumMap<DyeColor, RenderMaterial> materials = new EnumMap<>(DyeColor.class);
         for (final DyeColor dyeColor : DyeColor.values()) {
-            materials.put(dyeColor, new Material(net.minecraft.client.renderer.Atlases.SIGN_ATLAS,
+            materials.put(dyeColor, new RenderMaterial(net.minecraft.client.renderer.Atlases.SIGN_ATLAS,
                     new ResourceLocation("block/" + dyeColor.getTranslationKey() + "_terracotta")));
         }
         return materials;
     }
 
-    public static Material getTerracottaMaterial(final DyeColor dyeColor) {
+    public static RenderMaterial getTerracottaMaterial(final DyeColor dyeColor) {
         if (dyeColor == null) {
             return PLAIN_TERRACOTTA_MATERIAL;
         }

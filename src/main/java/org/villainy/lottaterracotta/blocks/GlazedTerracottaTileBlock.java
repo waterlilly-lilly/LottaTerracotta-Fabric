@@ -27,7 +27,7 @@ public class GlazedTerracottaTileBlock extends CarpetBlock {
 
     public GlazedTerracottaTileBlock(DyeColor dyeColor) {
         super(dyeColor, Block.Properties.create(Material.CARPET, dyeColor).hardnessAndResistance(0.1F));
-        setRegistryName(dyeColor.getName() + "_glazed_terracotta_tile");
+        setRegistryName(dyeColor.getTranslationKey() + "_glazed_terracotta_tile");
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
