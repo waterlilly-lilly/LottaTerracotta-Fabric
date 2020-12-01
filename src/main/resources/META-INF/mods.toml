@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/Rahala/LottaTerracotta/issues" #optional
 
 [[mods]]
 modId="lottaterracotta"
-version="1.16.3-1.3.1"
+version="1.16.4-1.3.1"
 displayName="Lotta Terracotta"
 authors="Rahala" #optional
 description='''
