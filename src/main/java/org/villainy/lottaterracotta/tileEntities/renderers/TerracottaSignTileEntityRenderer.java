@@ -106,7 +106,7 @@ public class TerracottaSignTileEntityRenderer extends TileEntityRenderer<Terraco
         for (int line = 0; line < 4; ++line)
         {
             IReorderingProcessor ireorderingprocessor = tileEntity.func_242686_a(line, (text) -> {
-                List<IReorderingProcessor> list = fontrenderer.func_238425_b_(text, 90);
+                List<IReorderingProcessor> list = fontrenderer.trimStringToWidth(text, 90);
                 return list.isEmpty() ? IReorderingProcessor.field_242232_a : list.get(0);
             });
             if (ireorderingprocessor != null) {

@@ -49,8 +49,8 @@ public class TerracottaSignEditScreen extends EditSignScreen {
         matrixstack.scale(0.6666667F, -0.6666667F, -0.6666667F);
         IRenderTypeBuffer.Impl renderTypeBuffer = this.minecraft.getRenderTypeBuffers().getBufferSource();
         RenderMaterial material = Atlases.getTerracottaMaterial(block.dyeColor);
-        IVertexBuilder ivertexbuilder = material.getBuffer(renderTypeBuffer, this.field_228191_a_::getRenderType);
-        this.field_228191_a_.signBoard.render(matrixstack, ivertexbuilder, 15728880, OverlayTexture.NO_OVERLAY);
+        IVertexBuilder ivertexbuilder = material.getBuffer(renderTypeBuffer, this.signModel::getRenderType);
+        this.signModel.signBoard.render(matrixstack, ivertexbuilder, 15728880, OverlayTexture.NO_OVERLAY);
 
         matrixstack.pop();
         matrixstack.translate(0.0D, (double)0.33333334F, (double)0.046666667F);
@@ -59,8 +59,8 @@ public class TerracottaSignEditScreen extends EditSignScreen {
         int textColor = this.tileSign.getTextColor().getTextColor();
 
         Matrix4f matrix4f = matrixstack.getLast().getMatrix();
-        int selectionPoint1 = this.textInputUtil.func_216896_c();
-        int selectionPoint2 = this.textInputUtil.func_216898_d();
+        int selectionPoint1 = this.textInputUtil.getStartIndex();
+        int selectionPoint2 = this.textInputUtil.getEndIndex();
         int direction = this.minecraft.fontRenderer.getBidiFlag() ? -1 : 1;
         int j1 = this.editLine * 10 - this.field_238846_r_.length * 5;
 
