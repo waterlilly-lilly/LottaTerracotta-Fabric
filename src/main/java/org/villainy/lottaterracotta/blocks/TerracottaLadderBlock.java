@@ -6,6 +6,7 @@ import net.minecraft.block.LadderBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -17,6 +18,7 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.IWorldReader;
 import org.villainy.lottaterracotta.config.LottaTerracottaConfig;
 import org.villainy.lottaterracotta.helper.Shape;
 import org.villainy.lottaterracotta.objectholders.TerracottaLadderBlocks;
@@ -43,6 +45,11 @@ public class TerracottaLadderBlock extends LadderBlock {
     public TerracottaLadderBlock() {
         super(Block.Properties.create(Material.ROCK, MaterialColor.ADOBE).hardnessAndResistance(0.4F).sound(SoundType.LADDER));
         setRegistryName("terracotta_ladder");
+    }
+
+    @Override
+    public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
+        return true;
     }
 
     @Override

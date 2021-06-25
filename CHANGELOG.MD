@@ -1,9 +1,14 @@
-### v1.3.1 Current Version
+### v1.3.2 Current Version
+
+#### Bug fixes
+* Fixed ladders not being climbable in newer Forge versions
+
+### v1.3.1
 
 #### Bug fixes
 * Vertical slabs moved to Building Blocks category
 
-### v1.3.0 Current Version
+### v1.3.0
 
 #### New features
 * Added glazed terracotta slabs
