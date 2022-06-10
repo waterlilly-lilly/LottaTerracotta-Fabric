@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "lottaterracotta",
+  "version": "${version}",
+
+  "name": "Lotta Terracotta",
+  "description": "Terracotta da vida baby",
+  "authors": [
+    "Rahala",
+    "MaeMachineBroke"
+  ],
+  "contact": {
+    "sources": "https://github.com/waterlilly-lilly/LottaTerracotta-Fabric"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.villainy.lottaterracotta.LottaTerracotta"
+    ],
+    "client": [
+      "org.villainy.lottaterracotta.client.LottaTerracottaClient"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18",
+    "java": ">=17"
+  }
+}
