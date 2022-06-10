@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.stream.Stream;
 
 public class GlazedTerracottaTileBlocks {
-    public static final HashMap<DyeColor, GlazedTerracottaTileBlock> GLAZED_TERRACOTTA_SLAB_BLOCKS = getGlazedTerracottaTileBlocks();
+    public static final HashMap<DyeColor, GlazedTerracottaTileBlock> GLAZED_TERRACOTTA_TILE_BLOCKS = getGlazedTerracottaTileBlocks();
     private static GlazedTerracottaTileBlock register(@NotNull DyeColor color) {
         GlazedTerracottaTileBlock block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta", color.getName() + "_glazed_terracotta_tile"), new GlazedTerracottaTileBlock(color));
         Registry.register(Registry.ITEM, new Identifier("lottaterracotta", color.getName() + "_glazed_terracotta_tile"), new BlockItem(block, new FabricItemSettings().group(ItemGroup.SEARCH)));
