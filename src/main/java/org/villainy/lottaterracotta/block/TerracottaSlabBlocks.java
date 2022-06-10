@@ -17,15 +17,15 @@ public class TerracottaSlabBlocks {
     public static final HashMap<DyeColor, TerracottaSlabBlock> COLORED_TERRACOTTA_SLAB_BLOCKS = getColoredTerracottaSlabBlocks();
 
     private static TerracottaSlabBlock register(@Nullable DyeColor color) {
+        TerracottaSlabBlock block;
         if(color == null) {
-            TerracottaSlabBlock block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta:terracotta_slab"), new TerracottaSlabBlock());
+            block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta:terracotta_slab"), new TerracottaSlabBlock());
             Registry.register(Registry.ITEM, new Identifier("lottaterracotta:terracotta_slab"), new BlockItem(block, new FabricItemSettings().group(ItemGroup.SEARCH)));
-            return block;
         } else {
-            TerracottaSlabBlock block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta", color.getName() + "_terracotta_slab"), new TerracottaSlabBlock(color));
+            block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta", color.getName() + "_terracotta_slab"), new TerracottaSlabBlock(color));
             Registry.register(Registry.ITEM, new Identifier("lottaterracotta", color.getName() + "_terracotta_slab"), new BlockItem(block, new FabricItemSettings().group(ItemGroup.SEARCH)));
-            return block;
         }
+        return block;
     }
     private static HashMap<DyeColor, TerracottaSlabBlock> getColoredTerracottaSlabBlocks() {
         HashMap<DyeColor, TerracottaSlabBlock> map = new HashMap<>();

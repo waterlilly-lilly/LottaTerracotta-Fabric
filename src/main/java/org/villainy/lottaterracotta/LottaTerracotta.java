@@ -14,6 +14,7 @@ public class LottaTerracotta implements ModInitializer {
                 TerracottaFenceBlocks.UNCOLORED_TERRACOTTA_FENCE_BLOCK != null &&
                 TerracottaFenceGateBlocks.UNCOLORED_TERRACOTTA_FENCE_GATE_BLOCK != null &&
                 TerracottaLadderBlocks.UNCOLORED_TERRACOTTA_LADDER_BLOCK != null &&
+                TerracottaSignBlocks.UNCOLORED_TERRACOTTA_SIGN_BLOCK != null &&
                 TerracottaPressurePlateBlocks.UNCOLORED_TERRACOTTA_PRESSURE_PLATE_BLOCK != null &&
                 TerracottaLeverBlocks.UNCOLORED_TERRACOTTA_LEVER_BLOCK != null &&
                 TerracottaButtonBlocks.UNCOLORED_TERRACOTTA_BUTTON_BLOCK != null &&

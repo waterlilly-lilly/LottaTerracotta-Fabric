@@ -41,5 +41,25 @@
       <option name="name" value="UserLocalRemappedMods" />
       <option name="url" value="file:$PROJECT_DIR$/.gradle/loom-cache/remapped_mods/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="Modding Playground" />
+      <option name="name" value="Modding Playground" />
+      <option name="url" value="https://raw.githubusercontent.com/moddingplayground/maven/main/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Terraformers" />
+      <option name="name" value="Terraformers" />
+      <option name="url" value="https://maven.terraformersmc.com/releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Shedaniel" />
+      <option name="name" value="Shedaniel" />
+      <option name="url" value="https://maven.shedaniel.me/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Modding Playground" />
+      <option name="name" value="Modding Playground" />
+      <option name="url" value="https://raw.githubusercontent.com/moddingplayground/maven/31fd098e3d1b823f1fe4bae4e2d4ba4149e2dd1c/" />
+    </remote-repository>
   </component>
 </project>
