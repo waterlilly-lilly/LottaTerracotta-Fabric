@@ -8,6 +8,7 @@ public class LottaTerracotta implements ModInitializer {
     @Override
     public void onInitialize() {
         if(!(TerracottaSlabBlocks.UNCOLORED_TERRACOTTA_SLAB_BLOCK != null &&
+                TerracottaVerticalSlabBlocks.UNCOLORED_TERRACOTTA_VERTICAL_SLAB_BLOCK != null &&
                 TerracottaStairsBlocks.UNCOLORED_TERRACOTTA_STAIRS_BLOCK != null &&
                 TerracottaWallBlocks.UNCOLORED_TERRACOTTA_WALL_BLOCK != null &&
                 TerracottaFenceBlocks.UNCOLORED_TERRACOTTA_FENCE_BLOCK != null &&
