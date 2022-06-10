@@ -7,6 +7,7 @@ import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import javax.annotation.Nullable;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
@@ -15,7 +16,7 @@ public class TerracottaSlabBlocks {
     public static final TerracottaSlabBlock UNCOLORED_TERRACOTTA_SLAB_BLOCK = register(null);
     public static final HashMap<DyeColor, TerracottaSlabBlock> COLORED_TERRACOTTA_SLAB_BLOCKS = getColoredTerracottaSlabBlocks();
 
-    private static TerracottaSlabBlock register(DyeColor color) {
+    private static TerracottaSlabBlock register(@Nullable DyeColor color) {
         if(color == null) {
             TerracottaSlabBlock block = Registry.register(Registry.BLOCK, new Identifier("lottaterracotta:terracotta_slab"), new TerracottaSlabBlock());
             Registry.register(Registry.ITEM, new Identifier("lottaterracotta:terracotta_slab"), new BlockItem(block, new FabricItemSettings().group(ItemGroup.SEARCH)));
