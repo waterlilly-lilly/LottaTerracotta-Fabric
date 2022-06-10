@@ -7,13 +7,16 @@ import org.villainy.lottaterracotta.block.*;
 public class LottaTerracotta implements ModInitializer {
     @Override
     public void onInitialize() {
-        assert TerracottaSlabBlocks.UNCOLORED_TERRACOTTA_SLAB_BLOCK != null;
-        assert TerracottaStairsBlocks.UNCOLORED_TERRACOTTA_STAIRS_BLOCK != null;
-        assert TerracottaWallBlocks.UNCOLORED_TERRACOTTA_WALL_BLOCK != null;
-        assert TerracottaFenceBlocks.UNCOLORED_TERRACOTTA_FENCE_BLOCK != null;
-        assert TerracottaFenceGateBlocks.UNCOLORED_TERRACOTTA_FENCE_GATE_BLOCK != null;
-        assert TerracottaPressurePlateBlocks.UNCOLORED_TERRACOTTA_PRESSURE_PLATE_BLOCK != null;
-        assert GlazedTerracottaSlabBlocks.GLAZED_TERRACOTTA_SLAB_BLOCKS.get(DyeColor.WHITE) != null;
-        assert GlazedTerracottaTileBlocks.GLAZED_TERRACOTTA_TILE_BLOCKS.get(DyeColor.WHITE) != null;
+        if(!(TerracottaSlabBlocks.UNCOLORED_TERRACOTTA_SLAB_BLOCK != null &&
+        TerracottaStairsBlocks.UNCOLORED_TERRACOTTA_STAIRS_BLOCK != null &&
+        TerracottaWallBlocks.UNCOLORED_TERRACOTTA_WALL_BLOCK != null &&
+        TerracottaFenceBlocks.UNCOLORED_TERRACOTTA_FENCE_BLOCK != null &&
+        TerracottaFenceGateBlocks.UNCOLORED_TERRACOTTA_FENCE_GATE_BLOCK != null &&
+        TerracottaPressurePlateBlocks.UNCOLORED_TERRACOTTA_PRESSURE_PLATE_BLOCK != null &&
+        TerracottaLeverBlocks.UNCOLORED_TERRACOTTA_LEVER_BLOCK != null &&
+        GlazedTerracottaSlabBlocks.GLAZED_TERRACOTTA_SLAB_BLOCKS.get(DyeColor.WHITE) != null &&
+        GlazedTerracottaTileBlocks.GLAZED_TERRACOTTA_TILE_BLOCKS.get(DyeColor.WHITE) != null)) {
+            System.err.println("Lotta Terracotta failed to load!");
+        }
     }
 }
