@@ -1,4 +1,4 @@
-package org.villainy.lottaterracotta.block;
+package org.villainy.lottaterracotta.blocks;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import org.villainy.lottaterracotta.block.TerracottaLeverBlock;
 
 import javax.annotation.Nullable;
 import java.util.HashMap;
@@ -29,9 +30,7 @@ public class TerracottaLeverBlocks {
     }
     private static HashMap<DyeColor, TerracottaLeverBlock> getColoredTerracottaLeverBlocks() {
         HashMap<DyeColor, TerracottaLeverBlock> map = new HashMap<>();
-        Stream.of(DyeColor.values()).forEach(dyeColor -> {
-            map.put(dyeColor, register(dyeColor));
-        });
+        Stream.of(DyeColor.values()).forEach(dyeColor -> map.put(dyeColor, register(dyeColor)));
         return map;
     }
 }

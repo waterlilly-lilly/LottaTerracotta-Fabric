@@ -1,7 +1,3 @@
-# Lotta Terracotta
+# Lotta Terracotta Fabric
 
-A Minecraft mod adding terracotta variations of existing vanilla blocks (slabs, stairs, etc.)
-
-## Download
-
-Available on CurseForge at https://www.curseforge.com/minecraft/mc-mods/lotta-terracotta
+A Minecraft mod adding terracotta variations of existing vanilla blocks (slabs, stairs, etc.), ported to Fabric. Original mod at https://github.com/RahalaBytes/LottaTerracotta.

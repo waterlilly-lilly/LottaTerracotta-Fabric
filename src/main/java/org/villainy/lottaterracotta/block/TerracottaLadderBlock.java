@@ -3,7 +3,6 @@ package org.villainy.lottaterracotta.block;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.tag.BlockTags;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
@@ -11,7 +10,6 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import org.villainy.lottaterracotta.config.LottaTerracottaConfig;
 import org.villainy.lottaterracotta.helper.Shape;
 
 public class TerracottaLadderBlock extends LadderBlock {
@@ -21,10 +19,6 @@ public class TerracottaLadderBlock extends LadderBlock {
     protected static final VoxelShape LADDER_EAST_AABB  = VoxelShapes.cuboid(Shape.getRotatedBox(LADDER_UNROTATED_AABB, Direction.EAST, false));
     protected static final VoxelShape LADDER_WEST_AABB  = VoxelShapes.cuboid(Shape.getRotatedBox(LADDER_UNROTATED_AABB, Direction.WEST, false));
     protected static final VoxelShape LADDER_NORTH_AABB = VoxelShapes.cuboid(Shape.getRotatedBox(LADDER_UNROTATED_AABB, Direction.NORTH, false));
-
-    private boolean isEnabled() {
-        return LottaTerracottaConfig.enableLadders;
-    }
 
     public TerracottaLadderBlock(DyeColor color) {
         super(FabricBlockSettings.of(Material.STONE).mapColor(color).hardness(0.4f).sounds(BlockSoundGroup.LADDER));

@@ -3,7 +3,7 @@
   "id": "lottaterracotta",
   "version": "${version}",
 
-  "name": "Lotta Terracotta",
+  "name": "Lotta Terracotta Fabric",
   "description": "Terracotta da vida baby",
   "authors": [
     "Rahala",
@@ -14,20 +14,13 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "org.villainy.lottaterracotta.LottaTerracotta"
-    ],
-    "client": [
-      "org.villainy.lottaterracotta.client.LottaTerracottaClient"
     ]
   },
-  "mixins": [
-    "lottaterracotta.mixins.json"
-  ],
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",

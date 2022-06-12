@@ -11,18 +11,7 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-    maven {
-        name = "Modding Playground"
-        url  = "https://raw.githubusercontent.com/moddingplayground/maven/31fd098e3d1b823f1fe4bae4e2d4ba4149e2dd1c/" //this is only slightly jankier than using a GITHUB REPO for maven
-    }
-    maven {
-        name = 'Shedaniel'
-        url  = 'https://maven.shedaniel.me/'
-    }
-    maven {
-        name = 'Terraformers'
-        url  = 'https://maven.terraformersmc.com/releases/'
-    }
+
 }
 
 dependencies {
@@ -32,11 +21,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-    modImplementation "net.moddingplayground.frame:frame-fabric:${project.frame_version}"
-
-    modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
-
 }
 
 processResources {
